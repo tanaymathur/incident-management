@@ -16,8 +16,8 @@ public class ServiceNowProcessor {
 
     ObjectMapper objectMapper = new ObjectMapper();
 
-    public String incidentRequest(){
-        return restClient.getIncidetDetails("INC0010004");
+    public String incidentRequest(String incidentNumber){
+        return restClient.getIncidetDetails(incidentNumber);
     }
 
     public String createIncident() throws IOException {
